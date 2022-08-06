@@ -5,15 +5,18 @@ public class Ass_p_2_ATM {
         private final String id;
         private double balance;
 
-        public String getId() {
+        public String getId()  // method for get id number 
+ {
             return id;
         }
 
-        public double getBalance() {
+        public double getBalance() // method for get balance 
+ {
             return balance;
         }
 
-        public Ass_p_2_ATM() {
+        public Ass_p_2_ATM()  //  constructor
+ {
             count++;
             if (count < 10) {
                 id = "AC00" + (count);
@@ -23,7 +26,8 @@ public class Ass_p_2_ATM {
             balance = 300;
         }
 
-        public void withdraw(double money) {
+        public void withdraw(double money)   // withdraw method for withdraw money 
+  {
             if (balance - money >= 300) {
                 balance -= money;
                 System.out.println(money + " Rs successfully withdrawn.");
@@ -33,13 +37,15 @@ public class Ass_p_2_ATM {
             }
         }
 
-        public void deposit(double amount) {
+        public void deposit(double amount)  // deposit method for deposit money 
+ {
             balance += amount;
             System.out.println(amount + "Rs deposited to your account.");
             System.out.println("Current Balance is : " + balance);
         }
 
-        public void MoneyTransfer(Ass_p_2_ATM obj, double amount) {
+        public void MoneyTransfer(Ass_p_2_ATM obj, double amount)  // money transfer method for money transfer 1 acc. To other acc. 
+{
             if (balance - amount >= 300) {
                 balance -= amount;
                 obj.balance += amount;
@@ -50,6 +56,4 @@ public class Ass_p_2_ATM {
             }
         }
 }
-
-
 
