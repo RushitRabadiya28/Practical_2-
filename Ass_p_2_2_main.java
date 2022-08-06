@@ -1,7 +1,9 @@
 public class Ass_p_2_2_main {
     public static void main(String[] args) {
 
-        Ass_p_2_2 ace = new Ass_p_2_2();
+        Ass_p_2_2 ace = new Ass_p_2_2();  // create object of class file  
+
+// for printing call method 
 
         System.out.println("Annual Interest -> "+ace.getAnnual() + "%");
         System.out.println("Balance -> "+ace.getBalance());
@@ -13,3 +15,4 @@ public class Ass_p_2_2_main {
         System.out.println("Balance After Withdraw -> "+ace.withdraw(1250));
     }
 }
+
