@@ -9,6 +9,8 @@ import java.util.Scanner;
             boolean flag = true;
             int choice;
             double amt;
+
+// array list 
             ArrayList<Ass_p_2_ATM> people = new ArrayList<Ass_p_2_ATM>();
             for (int i = 1; i <= 10; i++) {
                 people.add(new Ass_p_2_ATM());
@@ -18,6 +20,8 @@ import java.util.Scanner;
             int userNumber = userID(id, people);
 
             while (flag) {
+
+ // all choice 
                 System.out.println();
                 System.out.println("Make a choice......");
                 System.out.println("1.Balance inquiry ");
@@ -29,6 +33,8 @@ import java.util.Scanner;
                 System.out.println("7.Exit ");
                 choice = sc.nextInt();
                 switch (choice) {
+
+// all case 
                     case 1 -> {
                         System.out.println("Account Number : " + id);
                         System.out.println("Current Balance : " + people.get(userNumber).getBalance());
